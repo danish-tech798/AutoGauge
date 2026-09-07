@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (large files shouldn't go to git)
+data/raw_cars.csv
+data/*.csv
+data/images/
+!data/.gitkeep
+
+# Models
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+models/*.pkl
+
+# OS/Editor
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Streamlit
+.streamlit/
+
+# Env vars
+.env
