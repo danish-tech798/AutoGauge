@@ -58,3 +58,7 @@ out/
 *.db-*
 *.sqlite
 *.sqlite3
+# Include the trained models required for deployment
+!models/fusion_model.pkl
+!models/fusion_feature_columns.pkl
+!models/damage_detector/run/weights/best.pt
