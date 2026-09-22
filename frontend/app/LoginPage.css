@@ -1,0 +1,1507 @@
+/* Scoped styles. The desktop reference is 1672 x 941. */
+.ag-login {
+    --ag-lime: #ccff00;
+    --ag-white: #f8fafc;
+    --ag-muted: #8c9fb7;
+    --ag-border: #344650;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 36.12% 63.88%;
+    min-height: 100svh;
+    background: #050707;
+    color: var(--ag-white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ag-login *,
+.ag-login *::before,
+.ag-login *::after {
+    box-sizing: border-box;
+}
+
+.ag-login p,
+.ag-login h1,
+.ag-login h2 {
+    margin: 0;
+}
+
+.ag-login button,
+.ag-login input {
+    font: inherit;
+}
+
+.ag-auth {
+    position: relative;
+    padding: 3.77vw .72vw 7.25vw 2.81vw;
+    border-right: 1px solid var(--ag-border);
+    background: radial-gradient(ellipse at 45% 40%, #090c0d, #050707 80%);
+}
+
+.ag-auth-card {
+    border: 1px solid var(--ag-border);
+    border-radius: 14px;
+    padding: 2.57vw 2.45vw 2.33vw;
+}
+
+.ag-brand {
+    display: flex;
+    align-items: center;
+    gap: 1.08vw;
+    padding-bottom: 1.8vw;
+    border-bottom: 1px solid #27343d;
+}
+
+.ag-brand-icon {
+    display: grid;
+    place-items: center;
+    width: 3.23vw;
+    height: 3.23vw;
+    flex-shrink: 0;
+    color: var(--ag-lime);
+    border: 2px solid currentColor;
+    border-radius: 8px;
+}
+
+.ag-brand-icon svg {
+    width: 65%;
+    height: 65%;
+}
+
+.ag-brand-name {
+    font-size: 1.8vw;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.ag-brand-tagline {
+    color: var(--ag-muted);
+    font-size: .84vw;
+    letter-spacing: .055em;
+    margin-top: .35vw !important;
+    white-space: nowrap;
+}
+
+.ag-auth-heading {
+    margin-top: 1.92vw;
+}
+
+.ag-eyebrow {
+    font-size: 1.02vw;
+    font-weight: 700;
+    color: var(--ag-lime);
+}
+
+.ag-auth h2 {
+    margin-top: .78vw;
+    font-size: 3vw;
+    font-weight: 800;
+    letter-spacing: -.045em;
+    line-height: 1.13;
+}
+
+.ag-auth h2 span,
+.ag-hero h1 span {
+    color: var(--ag-lime);
+}
+
+.ag-description {
+    font-size: 1.31vw;
+    line-height: 1.45;
+    color: var(--ag-muted);
+    margin-top: .48vw !important;
+}
+
+.ag-tabs {
+    display: flex;
+    gap: 1.65vw;
+    margin: 2.48vw 0 2.38vw;
+    border-bottom: 1px solid #35424c;
+}
+
+.ag-tabs button {
+    position: relative;
+    padding: 0 0 .8vw;
+    background: none;
+    border: 0;
+    color: var(--ag-muted);
+    font-size: 1.12vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ag-tabs button[aria-pressed=true] {
+    color: var(--ag-lime);
+}
+
+.ag-tabs button[aria-pressed=true]::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--ag-lime);
+}
+
+.ag-field {
+    display: block;
+    margin-bottom: 1.38vw;
+}
+
+.ag-field>span {
+    display: block;
+    font-size: .98vw;
+    font-weight: 600;
+    color: var(--ag-muted);
+    margin-bottom: .6vw;
+    letter-spacing: .025em;
+}
+
+.ag-field input {
+    display: block;
+    width: 100%;
+    height: 3.95vw;
+    padding: 0 1.38vw;
+    border: 1px solid #dce6f5;
+    border-radius: 10px;
+    background: #e4f0ff;
+    color: #06090c;
+    font-size: 1.33vw;
+    outline: none;
+}
+
+.ag-field input::placeholder {
+    color: #66768a;
+    opacity: 1;
+}
+
+.ag-field input:focus {
+    border-color: var(--ag-lime);
+    box-shadow: 0 0 0 3px #ccff0030;
+}
+
+.ag-field input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #e4f0ff inset;
+    -webkit-text-fill-color: #06090c;
+}
+
+.ag-submit {
+    display: block;
+    width: 100%;
+    min-height: 3.95vw;
+    margin-top: 2.03vw;
+    border: 0;
+    border-radius: 10px;
+    color: #050700;
+    background: var(--ag-lime);
+    font-size: 1.25vw;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.ag-login button:focus-visible {
+    outline: 2px solid var(--ag-white);
+    outline-offset: 5px;
+}
+
+.ag-login button:disabled {
+    cursor: wait;
+    opacity: .65;
+}
+
+.ag-submit:hover:not(:disabled) {
+    filter: brightness(1.06);
+}
+
+.ag-error {
+    color: #f87171;
+    line-height: 1.5;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.ag-corner-mark {
+    position: absolute;
+    bottom: 1.6vw;
+    left: 1.6vw;
+    display: grid;
+    place-items: center;
+    width: 3.05vw;
+    height: 3.05vw;
+    border: 2px solid #293a43;
+    border-radius: 50%;
+    font-size: 1.45vw;
+}
+
+.ag-hero {
+    position: relative;
+    min-width: 0;
+    min-height: 56.28vw;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 96% 9%, #111802 0, transparent 29%), #050707;
+}
+
+.ag-hero-copy {
+    position: relative;
+    z-index: 2;
+    padding: 3.89vw 2.85vw 0 3.23vw;
+}
+
+.ag-hero h1 {
+    margin-top: 1.2vw;
+    font-size: 4.65vw;
+    font-weight: 800;
+    letter-spacing: -.034em;
+    line-height: 1.055;
+}
+
+.ag-hero-description {
+    margin-top: 1.15vw !important;
+    color: var(--ag-muted);
+    font-size: 1.43vw;
+    line-height: 1.4;
+}
+
+.ag-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr .7fr;
+    gap: 1.32vw;
+    width: 76%;
+    margin-top: 1.35vw;
+}
+
+.ag-metric {
+    padding: 1.02vw 1.55vw;
+    border: 1px solid var(--ag-border);
+    border-radius: 13px;
+    background: #080c0c;
+}
+
+.ag-metric strong {
+    display: block;
+    font-size: 2.39vw;
+    line-height: 1.15;
+    letter-spacing: -.025em;
+}
+
+.ag-metric:first-child strong {
+    color: var(--ag-lime);
+}
+
+.ag-metric>span {
+    display: block;
+    margin-top: .2vw;
+    white-space: nowrap;
+    font-size: .98vw;
+    font-weight: 600;
+    color: var(--ag-muted);
+    letter-spacing: .02em;
+}
+
+.ag-car-art {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.ag-scan-art {
+    display: block;
+    position: absolute;
+    width: 17.79%;
+    height: auto;
+    right: 3%;
+    bottom: 27.69vw;
+    overflow: hidden;
+}
+
+@media (min-width:1000px) and (max-aspect-ratio:1672/941) {
+    .ag-login {
+        align-items: center;
+    }
+
+    .ag-auth {
+        min-height: 100svh;
+        display: flex;
+        align-items: center;
+    }
+
+    .ag-auth-card {
+        width: 100%;
+    }
+}
+
+@media (max-width:999px) {
+    .ag-login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ag-auth {
+        padding: 28px 20px;
+        border-right: 0;
+        border-bottom: 1px solid var(--ag-border);
+    }
+
+    .ag-auth-card {
+        max-width: 540px;
+        margin: auto;
+        padding: 28px;
+    }
+
+    .ag-brand {
+        gap: 14px;
+        padding-bottom: 24px;
+    }
+
+    .ag-brand-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .ag-brand-name {
+        font-size: 27px;
+    }
+
+    .ag-brand-tagline {
+        font-size: 10px;
+        margin-top: 5px !important;
+    }
+
+    .ag-auth-heading {
+        margin-top: 26px;
+    }
+
+    .ag-eyebrow {
+        font-size: 12px;
+    }
+
+    .ag-auth h2 {
+        margin-top: 10px;
+        font-size: 38px;
+    }
+
+    .ag-description {
+        font-size: 15px;
+        margin-top: 8px !important;
+    }
+
+    .ag-tabs {
+        margin: 28px 0;
+        gap: 26px;
+    }
+
+    .ag-tabs button {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+
+    .ag-field {
+        margin-bottom: 20px;
+    }
+
+    .ag-field>span {
+        font-size: 12px;
+        margin-bottom: 9px;
+    }
+
+    .ag-field input {
+        height: 54px;
+        font-size: 16px;
+        padding: 0 16px;
+    }
+
+    .ag-submit {
+        margin-top: 28px;
+        min-height: 54px;
+        font-size: 16px;
+    }
+
+    .ag-corner-mark {
+        display: none;
+    }
+
+    .ag-hero {
+        min-height: 0;
+        padding-bottom: 43.35vw;
+    }
+
+    .ag-hero-copy {
+        padding: 32px 24px 20px;
+    }
+
+    .ag-hero h1 {
+        font-size: clamp(34px, 6.4vw, 64px);
+        margin-top: 18px;
+    }
+
+    .ag-hero-description {
+        font-size: 16px;
+        margin-top: 20px !important;
+    }
+
+    .ag-desktop-break {
+        display: none;
+    }
+
+    .ag-metrics {
+        width: 100%;
+        gap: 10px;
+        margin-top: 24px;
+        grid-template-columns: 1fr 1.25fr .7fr;
+    }
+
+    .ag-metric {
+        padding: 14px 10px;
+        border-radius: 10px;
+    }
+
+    .ag-metric strong {
+        font-size: 26px;
+    }
+
+    .ag-metric>span {
+        font-size: clamp(8px, 1.55vw, 12px);
+        margin-top: 6px;
+    }
+
+    .ag-scan-art {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion:no-preference) {
+    .ag-submit {
+        transition: filter .15s;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+#root {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Minimal, unified login layout */
+.ag-login {
+    --ag-muted: #929ba8;
+
+    min-height: 100svh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 320px minmax(0, 620px);
+    justify-content: center;
+    align-items: center;
+    gap: clamp(40px, 6vw, 96px);
+    padding: 48px 32px;
+
+    background: #050707;
+}
+
+/* Remove the separate left panel appearance */
+.ag-auth {
+    display: block;
+    min-height: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.ag-auth-card {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+}
+
+.ag-brand {
+    gap: 12px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.ag-brand-icon {
+    width: 38px;
+    height: 38px;
+    border-width: 1px;
+    border-radius: 8px;
+}
+
+.ag-brand-name {
+    font-size: 22px;
+    letter-spacing: -0.035em;
+}
+
+.ag-brand-tagline {
+    margin-top: 5px !important;
+    font-size: 8px;
+    letter-spacing: 0.09em;
+}
+
+.ag-auth-heading {
+    margin-top: 38px;
+}
+
+.ag-eyebrow {
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+}
+
+.ag-auth h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+.ag-description {
+    margin-top: 8px !important;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.ag-tabs {
+    gap: 24px;
+    margin: 26px 0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.ag-tabs button {
+    padding-bottom: 11px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+}
+
+.ag-tabs button[aria-pressed="true"]::after {
+    height: 2px;
+}
+
+.ag-field {
+    margin-bottom: 18px;
+}
+
+.ag-field>span {
+    margin-bottom: 8px;
+    font-size: 10px;
+    letter-spacing: 0.07em;
+}
+
+.ag-field input {
+    height: 46px;
+    padding: 0 14px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.ag-submit {
+    min-height: 46px;
+    margin-top: 24px;
+    border-radius: 7px;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+}
+
+.ag-error {
+    font-size: 12px;
+}
+
+/* One shared background for the text and illustration */
+.ag-hero {
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+.ag-hero-copy {
+    padding: 0;
+}
+
+.ag-hero h1 {
+    max-width: 580px;
+    margin-top: 16px;
+    font-size: clamp(32px, 3.2vw, 44px);
+    line-height: 1.16;
+    letter-spacing: -0.045em;
+}
+
+.ag-desktop-break {
+    display: none;
+}
+
+.ag-hero-description {
+    max-width: 470px;
+    margin-top: 18px !important;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* Quiet, compact statistics */
+.ag-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    max-width: 440px;
+    gap: 20px;
+    margin-top: 26px;
+}
+
+.ag-metric {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+}
+
+.ag-metric strong {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.ag-metric>span {
+    margin-top: 6px;
+    font-size: 9px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    white-space: normal;
+}
+
+/* Smaller original artwork with softly blended edges */
+.ag-car-art {
+    position: relative;
+    inset: auto;
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    margin: 24px auto 0;
+
+    -webkit-mask-image:
+        linear-gradient(to bottom,
+            transparent 0%,
+            black 12%,
+            black 83%,
+            transparent 100%);
+    mask-image:
+        linear-gradient(to bottom,
+            transparent 0%,
+            black 12%,
+            black 83%,
+            transparent 100%);
+}
+
+/* Remove detached decorative elements */
+.ag-scan-art,
+.ag-corner-mark {
+    display: none;
+}
+
+/* Tablet and mobile */
+@media (max-width: 900px) {
+    .ag-login {
+        grid-template-columns: minmax(0, 540px);
+        gap: 48px;
+        padding: 40px 24px;
+    }
+
+    .ag-auth {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        min-height: 0;
+    }
+
+    .ag-hero {
+        width: 100%;
+        min-height: 0;
+        padding: 0;
+    }
+
+    .ag-hero h1 {
+        font-size: 34px;
+    }
+
+    .ag-car-art {
+        max-width: 480px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ag-login {
+        padding: 32px 20px;
+        gap: 40px;
+    }
+
+    .ag-auth-heading {
+        margin-top: 28px;
+    }
+
+    .ag-field input {
+        font-size: 16px;
+    }
+
+    .ag-hero h1 {
+        font-size: 30px;
+    }
+
+    .ag-hero-description {
+        font-size: 13px;
+    }
+
+    .ag-metrics {
+        gap: 12px;
+    }
+
+    .ag-metric strong {
+        font-size: 22px;
+    }
+
+    .ag-metric>span {
+        font-size: 8px;
+    }
+}
+
+/* Balanced, responsive webpage proportions */
+.ag-login {
+    display: grid;
+    grid-template-columns: minmax(0, 0.38fr) minmax(0, 0.62fr);
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100svh;
+    gap: clamp(40px, 5vw, 88px);
+
+    /* Wide layout, with a sensible limit on very large monitors */
+    padding-block: clamp(32px, 5vh, 64px);
+    padding-inline: max(5vw, calc((100vw - 1560px) / 2));
+
+    background: #050707;
+}
+
+.ag-auth {
+    display: block;
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.ag-auth-card {
+    width: 100%;
+    max-width: 450px;
+    margin-inline: auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+/* Brand and form */
+.ag-brand {
+    gap: 14px;
+}
+
+.ag-brand-icon {
+    width: 46px;
+    height: 46px;
+}
+
+.ag-brand-name {
+    font-size: clamp(24px, 1.8vw, 30px);
+}
+
+.ag-brand-tagline {
+    font-size: 10px;
+    line-height: 1.5;
+    white-space: normal;
+}
+
+.ag-auth-heading {
+    margin-top: clamp(30px, 3vw, 46px);
+}
+
+.ag-eyebrow {
+    font-size: 12px;
+}
+
+.ag-auth h2 {
+    font-size: clamp(34px, 2.6vw, 42px);
+    margin-top: 12px;
+}
+
+.ag-description {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.ag-tabs {
+    margin: 28px 0;
+    gap: 30px;
+}
+
+.ag-tabs button {
+    font-size: 13px;
+    padding-bottom: 12px;
+}
+
+.ag-field {
+    margin-bottom: 20px;
+}
+
+.ag-field>span {
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+
+.ag-field input {
+    height: 54px;
+    padding: 0 17px;
+    font-size: 16px;
+    border-radius: 9px;
+}
+
+.ag-submit {
+    min-height: 54px;
+    margin-top: 28px;
+    font-size: 14px;
+    border-radius: 9px;
+}
+
+/* Hero fills its share of the page */
+.ag-hero {
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.ag-hero-copy {
+    padding: 0;
+}
+
+.ag-hero h1 {
+    max-width: 780px;
+    margin-top: 18px;
+    font-size: clamp(38px, 3.5vw, 60px);
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+}
+
+.ag-desktop-break {
+    display: none;
+}
+
+.ag-hero-description {
+    max-width: 620px;
+    margin-top: 20px !important;
+    font-size: clamp(15px, 1.1vw, 18px);
+    line-height: 1.7;
+}
+
+/* Clearly readable, restrained statistics */
+.ag-metrics {
+    width: 100%;
+    max-width: 560px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.ag-metric {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.ag-metric strong {
+    font-size: clamp(27px, 2vw, 34px);
+}
+
+.ag-metric>span {
+    margin-top: 7px;
+    font-size: 11px;
+    line-height: 1.5;
+    white-space: normal;
+}
+
+/* Preserve the illustration's original proportions */
+.ag-car-art {
+    display: block;
+    position: relative;
+    inset: auto;
+
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 1068 / 463;
+    margin: 24px auto 0;
+
+    -webkit-mask-image: linear-gradient(to bottom,
+            transparent,
+            black 10%,
+            black 85%,
+            transparent);
+    mask-image: linear-gradient(to bottom,
+            transparent,
+            black 10%,
+            black 85%,
+            transparent);
+}
+
+.ag-scan-art,
+.ag-corner-mark {
+    display: none;
+}
+
+/* Stack naturally on tablets and phones */
+@media (max-width: 900px) {
+    .ag-login {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 48px;
+        padding: 40px 24px;
+    }
+
+    .ag-auth {
+        max-width: 450px;
+        margin-inline: auto;
+    }
+
+    .ag-hero {
+        max-width: 680px;
+        margin-inline: auto;
+    }
+
+    .ag-hero h1 {
+        font-size: clamp(34px, 5.5vw, 46px);
+    }
+
+    .ag-hero-description {
+        font-size: 15px;
+    }
+
+    .ag-car-art {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ag-login {
+        padding: 28px 20px;
+        gap: 40px;
+    }
+
+    .ag-auth h2 {
+        font-size: 32px;
+    }
+
+    .ag-hero h1 {
+        font-size: 34px;
+    }
+
+    .ag-metrics {
+        gap: 12px;
+    }
+
+    .ag-metric strong {
+        font-size: 26px;
+    }
+
+    .ag-metric>span {
+        font-size: 9px;
+    }
+}
+
+/* Blend the car artwork into the page background */
+.ag-car-art {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+
+    /* Fade left/right and top/bottom edges together */
+    -webkit-mask-image:
+        linear-gradient(to right,
+            transparent 0%,
+            black 8%,
+            black 92%,
+            transparent 100%),
+        linear-gradient(to bottom,
+            transparent 0%,
+            black 14%,
+            black 80%,
+            transparent 100%);
+
+    mask-image:
+        linear-gradient(to right,
+            transparent 0%,
+            black 8%,
+            black 92%,
+            transparent 100%),
+        linear-gradient(to bottom,
+            transparent 0%,
+            black 14%,
+            black 80%,
+            transparent 100%);
+
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+/* Navigation above the sign-in form */
+.ag-top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.ag-top-nav button {
+    padding: 9px 11px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background: transparent;
+    color: var(--ag-muted, #929ba8);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.ag-top-nav button:hover {
+    color: #ccff00;
+    background: rgba(204, 255, 0, 0.04);
+}
+
+.ag-top-nav button.is-active {
+    color: #ccff00;
+    background: rgba(204, 255, 0, 0.07);
+    border-color: rgba(204, 255, 0, 0.18);
+}
+
+/* Compact information panel */
+.ag-info-panel {
+    margin-top: 16px;
+    padding: 18px;
+    border: 1px solid rgba(204, 255, 0, 0.13);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.ag-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.ag-info-header h3 {
+    margin: 0;
+    color: #f8fafc;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ag-info-close {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--ag-muted, #929ba8);
+    cursor: pointer;
+}
+
+.ag-info-close:hover {
+    color: #ccff00;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.ag-info-panel p,
+.ag-service-list span {
+    color: var(--ag-muted, #929ba8);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.ag-service-list {
+    display: grid;
+    gap: 13px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ag-service-list strong {
+    display: block;
+    margin-bottom: 3px;
+    color: #f8fafc;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ag-service-list span {
+    display: block;
+}
+
+.ag-contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 10px 14px;
+    border: 1px solid rgba(204, 255, 0, 0.25);
+    border-radius: 7px;
+    background: rgba(204, 255, 0, 0.06);
+    color: #ccff00;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ag-contact-link:hover {
+    background: rgba(204, 255, 0, 0.12);
+}
+
+.ag-contact-link:focus-visible {
+    outline: 2px solid #ccff00;
+    outline-offset: 4px;
+}
+
+.ag-contact-note {
+    margin-top: 12px !important;
+}
+
+.ag-top-nav~.ag-auth-heading {
+    margin-top: 24px;
+}
+
+@media (max-width: 480px) {
+    .ag-top-nav {
+        gap: 4px;
+    }
+
+    .ag-top-nav button {
+        padding: 8px 9px;
+        font-size: 11px;
+    }
+}
+
+/* Position the label relative to the whole login page */
+.ag-login {
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.ag-engine-label {
+    position: absolute;
+    right: clamp(20px, 3vw, 48px);
+    bottom: 22px;
+    margin: 0;
+
+    color: #ccff00;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    text-align: right;
+}
+
+/* Remove the space previously above the headline */
+.ag-hero-copy>h1:first-child {
+    margin-top: 0;
+}
+
+.ag-login .ag-engine-label {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 24px;
+    bottom: 20px;
+    z-index: 50;
+
+    width: auto;
+    margin: 0;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: #050707;
+
+    color: #ccff00;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    text-align: right;
+    pointer-events: none;
+}
+
+/* Navigation above two aligned content columns */
+.ag-login {
+    display: grid;
+    grid-template-columns: minmax(0, 0.38fr) minmax(0, 0.62fr);
+    grid-template-rows: auto auto;
+
+    align-items: start;
+    align-content: center;
+
+    column-gap: clamp(40px, 5vw, 88px);
+    row-gap: 36px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full-width navigation row */
+.ag-login>.ag-top-nav {
+    grid-column: 1 / -1;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 16px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ag-top-nav button {
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+/* Start branding and hero at the same height */
+.ag-login>.ag-auth {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+
+    display: block;
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.ag-auth-card {
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+.ag-login>.ag-hero {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Brand: clear, balanced sizing */
+.ag-brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 0;
+}
+
+.ag-brand-icon {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+}
+
+.ag-brand-name {
+    font-size: clamp(26px, 2vw, 32px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+.ag-brand-tagline {
+    margin-top: 6px !important;
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    white-space: normal;
+}
+
+/* Form typography */
+.ag-auth-heading {
+    margin-top: 32px;
+}
+
+.ag-auth h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.ag-description {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.ag-eyebrow {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.ag-tabs button,
+.ag-submit {
+    font-size: 13px;
+}
+
+.ag-field>span {
+    font-size: 11px;
+}
+
+.ag-field input {
+    font-size: 16px;
+}
+
+/* Hero: prominent without overpowering the branding */
+.ag-hero-copy {
+    padding: 0;
+}
+
+.ag-hero .ag-hero-copy>h1 {
+    max-width: 680px;
+    margin: 0;
+
+    font-size: clamp(34px, 2.8vw, 46px);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+}
+
+.ag-hero-description {
+    max-width: 580px;
+    margin-top: 18px !important;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+/* Consistent statistic values and labels */
+.ag-metrics {
+    max-width: 520px;
+    margin-top: 26px;
+    gap: 24px;
+}
+
+.ag-metric strong {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.ag-metric>span {
+    margin-top: 7px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+}
+
+/* Keep the current artwork blending */
+.ag-car-art {
+    margin-top: 24px;
+}
+
+/* Mobile: navigation, form, then hero */
+@media (max-width: 900px) {
+    .ag-login {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+        align-content: start;
+        row-gap: 30px;
+    }
+
+    .ag-login>.ag-top-nav {
+        grid-column: 1;
+        grid-row: 1;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .ag-login>.ag-auth {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 450px;
+        margin-inline: auto;
+    }
+
+    .ag-login>.ag-hero {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 680px;
+        margin-inline: auto;
+    }
+
+    .ag-hero .ag-hero-copy>h1 {
+        font-size: clamp(32px, 5vw, 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .ag-top-nav button {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .ag-metrics {
+        gap: 12px;
+    }
+
+    .ag-metric strong {
+        font-size: 25px;
+    }
+
+    .ag-metric>span {
+        font-size: 9px;
+    }
+}

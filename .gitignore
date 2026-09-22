@@ -35,3 +35,26 @@ models/*.pkl
 
 # Env vars
 .env
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Frontend generated files
+node_modules/
+.next/
+out/
+.vercel/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
